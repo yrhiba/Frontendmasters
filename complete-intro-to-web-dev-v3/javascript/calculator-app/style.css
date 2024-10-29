@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: rgba(207, 234, 234, 0.603);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calc-container {
+    border: 1px solid black;
+    width: 60%;
+    height: 60%;
+    display: grid;
+    grid-template-areas:
+      "result result result result"
+      "clean  clean  pop  divide"
+      "seven   eight   nine multiply"
+      "four   five   six mins"
+      "one   two   three plus"
+      "zero zero zero equal";
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.calc-result {
+    grid-area: result;
+    background-color: rgba(0, 0, 0, 0.853);
+    color: white;
+    padding: 5px;
+    text-align: end;
+    font-size: 60px;
+    min-width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.calc-clean {
+    grid-area: clean;
+}
+.calc-pop {
+    grid-area: pop;
+}
+.calc-divide {
+    grid-area: divide;
+}
+.calc-seven {
+    grid-area: seven;
+}
+.calc-eight {
+    grid-area: eight;
+}
+.calc-nine {
+    grid-area: nine;
+}
+.calc-multiply {
+    grid-area: multiply;
+}
+.calc-four {
+    grid-area: four;
+}
+.calc-five {
+    grid-area: five;
+}
+.calc-six {
+    grid-area: six;
+}
+.calc-mins {
+    grid-area: mins;
+}
+.calc-one {
+    grid-area: one;
+}
+.calc-two {
+    grid-area: two;
+}
+.calc-three {
+    grid-area: three;
+}
+.calc-plus {
+    grid-area: plus;
+}
+.calc-zero {
+    grid-area: zero;
+}
+.calc-equal {
+    grid-area: equal;
+}
+
+.btn {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    background-color: bisque;
+    font-size: 25px;
+}
+
+.btn:hover {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(114, 114, 114, 0.482);
+    background-color: bisque;
+    cursor: pointer;
+}
+
+.btn-operator {
+    background-color: rgb(247, 178, 95);
+}
+
+.btn-operator:hover {
+    background-color: rgb(215, 140, 48);
+}
