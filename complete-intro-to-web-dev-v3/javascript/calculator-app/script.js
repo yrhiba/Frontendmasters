@@ -43,6 +43,7 @@ let calcElem = document.querySelector(".calc-container").addEventListener("click
             {
                 expression.push(result);
                 if (content === 'x') content = '*';
+                else if (content === '÷') content = '/';
                 expression.push(content);
                 cleanResult();
             }
@@ -51,6 +52,7 @@ let calcElem = document.querySelector(".calc-container").addEventListener("click
                 expression.push(result);
                 cleanResult();
                 try {
+                    console.log(expression, result);
                     result = eval(expression.join(''));
                     calResult.textContent = result;
                 } catch (e) {
