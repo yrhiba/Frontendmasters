@@ -52,7 +52,6 @@ let calcElem = document.querySelector(".calc-container").addEventListener("click
                 expression.push(result);
                 cleanResult();
                 try {
-                    console.log(expression, result);
                     result = eval(expression.join(''));
                     calResult.textContent = result;
                 } catch (e) {
