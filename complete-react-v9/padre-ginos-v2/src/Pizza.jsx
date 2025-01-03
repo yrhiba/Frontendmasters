@@ -1,10 +1,11 @@
 const Pizza = (props) => {
-	return (
-		<div className="pizza-item">
-			<h2>{props.name}</h2>
-			<p>{props.description}</p>
-		</div>
-	)
+  return (
+    <div className="pizza">
+      <h1>{props.name}</h1>
+      <p>{props.description}</p>
+      <img src={props.img} alt={props.name} />
+    </div>
+  );
 };
 
 export default Pizza;
